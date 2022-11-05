@@ -60,6 +60,7 @@ contract Blood{
         flag=1;
         if(healthrisks==false)
         flag=1;
+        if(flag==1)
         return true;
     }
     /*function availableBloodGrps(string ) public 
