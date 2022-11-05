@@ -1,0 +1,20 @@
+Donor:
+   Name
+   Age
+   Location
+   email id
+   Gender
+   smoke
+   drink
+   tattoo
+   Blood Group
+   BMI
+   Why do you want to donate?
+   Any health risk/diseases?
+   Preferred date and time for sample collection
+ Receiver:
+   Name
+   Patient Name
+   Age of patient
+   Blood Group required
+   Upload a valid medical certificate
