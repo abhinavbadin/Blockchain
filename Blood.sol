@@ -1,11 +1,13 @@
-pragma solidity >=0.4.22 <=0.6.0;
+//SPDX-License-Identifier: UNLICENSED
+pragma solidity ^0.8.17;
 contract Blood{
     
         address whoDonated;
         uint donated;
-        enum
+        //enum
     
     mapping(address => bool) alreadyUser;
+
     /*function whoDonated() public{
         if(alreadyUser[msg.sender]==true)
         //function 
