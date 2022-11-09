@@ -4,20 +4,18 @@
 
 <h2>Donor Form</h2>
 
-<form action="/action_page.php">
+ <form action="/action_page.php">
   <label for="fname">First name:</label> 
   <input type="text" id="fname" name="fname">
   <label for="lname">Last name:</label>
   <input type="text" id="lname" name="lname"><br>
-  <label for="loc">Location:</label><br>
-  <input type="text" id="loc" name="loc"><br>
-  <label for="email">Email ID:</label><br>
-  <input type="text" id="email" name="email"><br><br>
+  <label for="age">Age:</label><br>
+  <input type="text" id="age" name="age"><br>
   <label for="smoke">Do you smoke?</label><br>
   <input type="radio" id="Yes1" name="Yes1">
   <label for="Yes1">Yes</label>
   <input type="radio" id="No1" name="No1">
-  <label for="No1">No</label><br><br>
+  <label for="No1">No</label><br>
   <label for="drink">Do you drink?</label><br>
   <input type="radio" id="Yes2" name="Yes2">
   <label for="Yes2">Yes</label>
@@ -31,16 +29,16 @@
   <label for="tattoo">What is your Blood group?</label><br>
   <select id="cars" name="cars">
     <option value="A+">A+</option>
-    <option value="saab">A-</option>
-    <option value="fiat">B+</option>
-    <option value="audi">B-</option>
-    <option value="A+">O-</option>
-    <option value="saab">O+</option>
-    <option value="fiat">AB+</option>
-    <option value="audi">AB+</option>
+    <option value="a-">A-</option>
+    <option value="b+">B+</option>
+    <option value="b-">B-</option>
+    <option value="o-">O+</option>
+    <option value="o+">O-</option>
+    <option value="ab+">AB+</option>
+    <option value="ab">AB-</option>
   </select><br><br>
   <label for="ask">Reason for donation:</label><br>
-  <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea> <br>
+  <textarea id="reason" name="reason" rows="4" cols="50"></textarea> <br>
   <label for="BMI">BMI:</label><br>
   <input type="text" id="BMI" name="BMI"><br>
   <label for="health">Do you have any health issues?</label><br>
@@ -48,11 +46,8 @@
   <label for="Yes4">Yes</label>
   <input type="radio" id="No4" name="No4">
   <label for="No4">No</label><br>
-  <textarea placeholder="If yes, what are they?" id="w3review" name="w3review" rows="4" cols="50"></textarea> <br>
-  <label for="donate">Date of most recent donation:</label><br>
-  <input type="date" id="start" name="trip-start"
-  value="2018-07-22"
-  min="2018-01-01" max="2018-12-31"><br>
+  <textarea placeholder="If yes, what are they?" id="issue" name="issue" rows="4" cols="50"></textarea> <br>
+  
 <input type="submit" value="Submit">
 </form> 
 
