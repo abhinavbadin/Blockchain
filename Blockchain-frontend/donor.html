@@ -11,23 +11,21 @@
   <input type="text" id="lname" name="lname"><br>
   <label for="age">Age:</label><br>
   <input type="text" id="age" name="age"><br>
-  <label for="smoke">Do you smoke?</label><br>
-  <input type="radio" id="Yes1" name="Yes1">
-  <label for="Yes1">Yes</label>
-  <input type="radio" id="No1" name="No1">
-  <label for="No1">No</label><br>
-  <label for="drink">Do you drink?</label><br>
-  <input type="radio" id="Yes2" name="Yes2">
-  <label for="Yes2">Yes</label>
-  <input type="radio" id="No2" name="No2">
-  <label for="No2">No</label><br>
-  <label for="tattoo">Do you have a tattoo?</label><br>
-  <input type="radio" id="Yes3" name="Yes3">
-  <label for="Yes3">Yes</label>
-  <input type="radio" id="No3" name="No3">
-  <label for="No3">No</label><br>
-  <label for="tattoo">What is your Blood group?</label><br>
-  <select id="cars" name="cars">
+ <label for="smoke">Do you smoke:</label>
+  <select name="smoke" id="smoke">
+  <option value="yes">Yes</option>
+<option value="No">No</option></select><br><br>
+<label for="drink">Do you drink:</label>
+  <select name="drink" id="drink">
+  <option value="yes">Yes</option>
+ <option value="No">No</option></select><br><br>
+<label for="tattoo">Do you have a tattoo:</label>
+  <select name="tattoo" id="tattoo">
+  <option value="yes">Yes</option>
+<option value="No">No</option>
+  </select><br><br>
+  <label for="grp">What is your Blood group?</label>
+   <select name="grp" id="grp">
     <option value="A+">A+</option>
     <option value="a-">A-</option>
     <option value="b+">B+</option>
@@ -41,11 +39,10 @@
   <textarea id="reason" name="reason" rows="4" cols="50"></textarea> <br>
   <label for="BMI">BMI:</label><br>
   <input type="text" id="BMI" name="BMI"><br>
-  <label for="health">Do you have any health issues?</label><br>
-  <input type="radio" id="Yes4" name="Yes4">
-  <label for="Yes4">Yes</label>
-  <input type="radio" id="No4" name="No4">
-  <label for="No4">No</label><br>
+  <label for="issues">Do you have any health issues:</label>
+  <select name="issues" id="issues">
+  <option value="yes">Yes</option>
+  <option value="No">No</option>
   <textarea placeholder="If yes, what are they?" id="issue" name="issue" rows="4" cols="50"></textarea> <br>
   
 <input type="submit" value="Submit">
@@ -53,4 +50,3 @@
 
 </body>
 </html>
-
