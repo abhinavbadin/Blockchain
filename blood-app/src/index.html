@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood-By-Blockchain</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+.center {
+  
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.button {
+  background-color: cadetblue;
+border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/truffle-contract@4.0.31/dist/truffle-contract.min.js"></script>
+</head>
+<body>
+    <header>
+    <h1> <centre>Blood By Blockchain </centre> </h1>
+    </header>
+    <div class="center">
+        <!-- <a href="donor.html" class="button" onclick="metamask()">Donor</a></button>
+        <a href="receiver.html" class="button" onclick="metamask()">Receiver</a></button> -->
+
+        <button class="button" id="donor">Donate</button>
+        <button class="button" id ="receiver" >Receive</button>
+    </div> 
+    <script src="app.js"></script>
+    <!-- <script>
+      let account;
+        const connectMetamask = async () => {
+            if(window.ethereum !== "undefined") {
+                const accounts = await ethereum.request({method: "eth_requestAccounts"});
+                account = accounts[0];
+                document.getElementById("accountArea").innerHTML = account;
+
+            }
+      //web3.eth.defaultAccount="0x5B38Da6a701c568545dCfcB03FcB875f56beddC4"
+      const ABI=[
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "donor",
+				"type": "address"
+			}
+		],
+		"name": "check_membership",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "x",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "donor",
+				"type": "address"
+			}
+		],
+		"name": "donate",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "donor",
+				"type": "address"
+			}
+		],
+		"name": "donor_eligible",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "recv",
+				"type": "address"
+			}
+		],
+		"name": "rec",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "donor",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "age",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "bmi",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "smoke",
+				"type": "bool"
+			},
+			{
+				"internalType": "bool",
+				"name": "drink",
+				"type": "bool"
+			},
+			{
+				"internalType": "bool",
+				"name": "healthrisks",
+				"type": "bool"
+			},
+			{
+				"internalType": "bool",
+				"name": "tattoo",
+				"type": "bool"
+			},
+			{
+				"internalType": "string",
+				"name": "bloodgr",
+				"type": "string"
+			}
+		],
+		"name": "set_donor",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "recv",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "age",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "bloodgr",
+				"type": "string"
+			}
+		],
+		"name": "set_receiver",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]
+      const Address="0xd9145CCE52D386f254917e481eB44e9943F39138";
+
+      window.web3 = await new Web3(window.ethereum);
+      window.contract = await new window.web3.eth.Contract( ABI, Address); 
+      document.getElementById("contractArea").innerHTML = "connected to smart contract";
+      return readContract();
+    }
+    const readContract = async () => {
+            let data = await window.contract.methods.check_membership(account).call();
+            console.log(data);
+            document.getElementById("dataArea").innerHTML = data;
+      }
+
+
+    </script>
+     -->
+
+
+</body>
+</html>

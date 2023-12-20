@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/truffle-contract@4.0.31/dist/truffle-contract.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>ReceiverForm</title>
+  </head>
+
+<body>
+
+<h2>Receiver Form</h2>
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="patname">Patient name:</label><br>
+  <input type="text" id="patname" name="patname"><br><br>
+  <label for="age">Age of Patient:</label><br>
+  <input type="text" id="age" name="age"><br><br>
+  <label for="needed">Blood Group required:</label><br>
+  <select name="needed" id="needed">
+   <option value="A+">A+</option>
+   <option value="A-">A-</option>
+   <option value="B+">B+</option>
+   <option value="B-">B-</option>
+   <option value="O+">O+</option>
+   <option value="O+">O-</option>
+   <option value="AB+">AB+</option>
+   <option value="AB-">AB-</option>
+  </select><br><br>
+  <label for="file">Upload valid medical certificate:</label><br>
+  <input type="file" id="file" name="file"><br><br>
+  <!-- <input type="submit"> -->
+</form> 
+<button id="receiverformsubmit">Submit</button>
+<script src="app.js"></script>
+</body>
+</html>
